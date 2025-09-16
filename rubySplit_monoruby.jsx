@@ -45,7 +45,7 @@ function main() {
         if (parts.length === baseLen && parts.length > 1) {
             // → モノルビ確定
             for (var p = 0; p < parts.length; p++) {
-                chars[start + p].rubyType = RubyTypes.GROUP_RUBY;
+                chars[start + p].rubyType = RubyTypes.PER_CHARACTER_RUBY;
                 chars[start + p].rubyString = parts[p];
                 chars[start + p].rubyFlag = true;
             }
